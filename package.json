@@ -1,0 +1,25 @@
+{
+  "name": "zoho-desktop-app",
+  "version": "1.0.0",
+  "description": "An iot device dashboard application",
+  "scripts": {
+    "start": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.zohodesktop.app",
+    "mac": {
+      "category": ""
+    }
+  },
+  "main": "index.js",
+  "author": "Lawrence Ikenna",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5"
+  },
+  "dependencies": {}
+}
